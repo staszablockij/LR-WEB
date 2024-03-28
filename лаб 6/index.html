@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta charset=UTF-8>
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="mywebapp.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script src="mywebap/mywebap.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body id="body">
+    <div id="header">
+
+
+
+    </div>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: rgb(41, 37, 37); border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+   <div>
+    <table align="center" class="FormPanel" id="FormPanel" >
+      <div id="tilo">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
+      </tr>
+      <tr>
+        <td id="ContPhone"></td>
+        <td rowspan="5" id="sendButtonContainer" class="send"></td>
+      </tr>
+      <tr>
+        <td id="ContName"></td>
+      </tr>
+      <tr>
+        <td id="ContEmail"></td>
+      </tr>
+      <tr>
+        <td id="ContMessage"></td>
+      </tr>
+      <tr>
+        <td style="color:green;" id="errorLabelContainer"></td>
+      </tr>   
+    </div>   
+    </table>
+    <table align="center" class="exchange" id="exchange">
+      <tr>
+        <td colspan="2" style="font-weight:bold;"></td>        
+      </tr>
+      
+      <tr>
+        <td id="senddolar"></td>
+        <td id="senddolarContainer"></td>
+      </tr>
+      
+      <tr>
+        <td colspan="2" style="color:green;" id="errorLabelContainer"></td>
+      </tr>
+    </table>
+  </div>
+    
+  </body>
+</html>
